@@ -4,7 +4,7 @@ metadata:
   name: ingress-for-iap-with-gke
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
-    networking.gke.io/managed-certificates: "iap-domain"
+    networking.gke.io/managed-certificates: "iap-domain-cert"
 spec:
   defaultBackend:
     service:

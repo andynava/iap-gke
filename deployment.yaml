@@ -18,7 +18,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
       - name: web-app
-        image: gcr.io/gke-with-iap-315723/iap-image:latest
+        image: gcr.io/[YOUR-PROJECT-ID]/iap-image:latest
         imagePullPolicy: "Always"
         # This app listens on port 8080 for web traffic by default.
         ports:

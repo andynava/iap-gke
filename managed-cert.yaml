@@ -1,7 +1,7 @@
 apiVersion: networking.gke.io/v1beta1
 kind: ManagedCertificate
 metadata:
-  name: iap-domain
+  name: iap-domain-cert
 spec:
   domains:
     - malixman.com
