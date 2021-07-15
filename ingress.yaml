@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-for-iap-with-gke
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
+    networking.gke.io/managed-certificates: "iap-domain"
+spec:
+  defaultBackend:
+    service:
+      name: iap-service
+      port:
+        number: 80

@@ -1,0 +1,50 @@
+auditConfigs:
+- auditLogConfigs:
+  - logType: ADMIN_READ
+  - logType: DATA_READ
+  - logType: DATA_WRITE
+  service: iap.googleapis.com
+bindings:
+- members:
+  - serviceAccount:service-318527691096@gcp-gae-service.iam.gserviceaccount.com
+  role: roles/appengine.serviceAgent
+- members:
+  - serviceAccount:318527691096@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-318527691096@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:service-318527691096@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-318527691096@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-318527691096@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:318527691096-compute@developer.gserviceaccount.com
+  - serviceAccount:318527691096@cloudservices.gserviceaccount.com
+  - serviceAccount:gke-with-iap@appspot.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com
+  role: roles/firebase.managementServiceAgent
+- members:
+  - serviceAccount:firebase-adminsdk-u30ae@gke-with-iap.iam.gserviceaccount.com
+  role: roles/firebase.sdkAdminServiceAgent
+- members:
+  - serviceAccount:service-318527691096@firebase-rules.iam.gserviceaccount.com
+  role: roles/firebaserules.system
+- members:
+  - serviceAccount:firebase-adminsdk-u30ae@gke-with-iap.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountTokenCreator
+- members:
+  - user:icstater@gmail.com
+  role: roles/owner
+- members:
+  - serviceAccount:service-318527691096@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+etag: BwXD45XCSSc=
+version: 1
